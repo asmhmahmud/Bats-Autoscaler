@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A79065B3-4D6F-4F9C-8A6E-864832651FAA}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AutoScaler</RootNamespace>
+    <AssemblyName>AutoScaler</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Data.Edm, Version=5.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Data.Edm.5.2.0\lib\net40\Microsoft.Data.Edm.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Data.OData, Version=5.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Data.OData.5.2.0\lib\net40\Microsoft.Data.OData.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Samples.WindowsAzure.ServiceManagement">
+      <HintPath>..\References\Microsoft.Samples.WindowsAzure.ServiceManagement.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAzure.Configuration, Version=1.8.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.WindowsAzure.ConfigurationManager.1.8.0.0\lib\net35-full\Microsoft.WindowsAzure.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAzure.Storage, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\WindowsAzure.Storage.2.0.6.0\lib\net40\Microsoft.WindowsAzure.Storage.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Services.Client" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.Web" />
+    <Reference Include="System.Spatial, Version=5.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Spatial.5.2.0\lib\net40\System.Spatial.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Windows.Forms.DataVisualization.Design" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AutoScale\Algorithm.cs" />
+    <Compile Include="AutoScale\DataManager.cs" />
+    <Compile Include="AutoScale\OurAlg.cs" />
+    <Compile Include="AutoScale\RUBiSAutoScaleManager.cs" />
+    <Compile Include="Benchmark\EqlSC.cs" />
+    <Compile Include="AutoScale\RuntimeDelay.cs" />
+    <Compile Include="Benchmark\OptOffline.cs" />
+    <Compile Include="Benchmark\OptOffAlg.cs" />
+    <Compile Include="Benchmark\PerfOpt.cs" />
+    <Compile Include="Benchmark\ReactSCAlg.cs" />
+    <Compile Include="Benchmark\ReactSC.cs" />
+    <Compile Include="Benchmark\RSWorkloadGen.cs" />
+    <Compile Include="Benchmark\CBAS.cs" />
+    <Compile Include="Budget\EqlSCBud.cs" />
+    <Compile Include="Budget\OptOfflineBud.cs" />
+    <Compile Include="Budget\RUBiSImpvBud.cs" />
+    <Compile Include="Budget\RUBiSUserBud.cs" />
+    <Compile Include="LoadGen\DelayMonitor.cs" />
+    <Compile Include="Tests\AdaptiveDelayTest.cs" />
+    <Compile Include="Tests\GenerateRUBiSDelayTable.cs" />
+    <Compile Include="Tests\RUBiSRuntimeDelayTest.cs" />
+    <Compile Include="Tests\GenerateAdaptiveDelayTable.cs" />
+    <Compile Include="Tests\DelayTest.cs" />
+    <Compile Include="AutoScale\ServiceTimeFinder.cs" />
+    <Compile Include="AutoScale\SimulationSettings.cs" />
+    <Compile Include="AutoScale\SlotInfo.cs" />
+    <Compile Include="LoadGen\ExpDistribution.cs" />
+    <Compile Include="LoadGen\HttpRequestCustom.cs" />
+    <Compile Include="LoadGen\ResponseDetail.cs" />
+    <Compile Include="LoadGen\Slot.cs" />
+    <Compile Include="LoadGen\Experiment.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="AutoScale\Scaler.cs" />
+    <Compile Include="Service\CloudService.cs" />
+    <Compile Include="AutoScale\Settings.cs" />
+    <Compile Include="Service\PerformanceCountersEntity.cs" />
+    <Compile Include="Service\TableStorage.cs" />
+    <Compile Include="Tests\GenerateDelayTable.cs" />
+    <Compile Include="AutoScale\WorkloadGen.cs" />
+    <Compile Include="Workload\Prediction\InstanceData.cs" />
+    <Compile Include="Workload\Prediction\TableDataPrintUtility.cs" />
+    <Compile Include="Workload\Prediction\TableDataProvider.cs" />
+    <Compile Include="Workload\Prediction\WorkloadPredictor.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="Input\load_hml.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Input\phpfive.publishsettings">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Input\phpsix.publishsettings" />
+    <None Include="Input\RUBiSOriginalDelayTable.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Resource Include="Input\runtimeDelay.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

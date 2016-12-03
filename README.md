@@ -2,8 +2,7 @@
 This is a generalized version of our source code. All publication related settings has been removed.
 For more information please visit https://sites.google.com/site/asmhmahmud/research#bats
 
-Use visual studio 2013 or later to run AzureAutoScalerSystem
-use Netbeans 8.0 or later to run AzureSimulator
+Use visual studio 2013 or later to run AzureAutoScalerSystem. Use Netbeans 8.0 or later to run AzureSimulator
 
 
 ## Summary of the project

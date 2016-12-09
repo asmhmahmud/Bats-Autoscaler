@@ -94,7 +94,6 @@ D:\Works\Source Code\GitHub\Bats-Autoscaler\AzureAutoScalerSystem\AutoScale\bin\
 D:\Works\Source Code\GitHub\Bats-Autoscaler\AzureAutoScalerSystem\AutoScale\bin\Debug\ru\System.Spatial.resources.dll
 D:\Works\Source Code\GitHub\Bats-Autoscaler\AzureAutoScalerSystem\AutoScale\bin\Debug\zh-Hans\System.Spatial.resources.dll
 D:\Works\Source Code\GitHub\Bats-Autoscaler\AzureAutoScalerSystem\AutoScale\bin\Debug\zh-Hant\System.Spatial.resources.dll
-D:\Works\Source Code\GitHub\Bats-Autoscaler\AzureAutoScalerSystem\AutoScale\obj\x86\Debug\AutoScaler.csprojResolveAssemblyReference.cache
 D:\Works\Source Code\GitHub\Bats-Autoscaler\AzureAutoScalerSystem\AutoScale\obj\x86\Debug\AutoScaler.g.resources
 D:\Works\Source Code\GitHub\Bats-Autoscaler\AzureAutoScalerSystem\AutoScale\obj\x86\Debug\AutoScaler.exe
 D:\Works\Source Code\GitHub\Bats-Autoscaler\AzureAutoScalerSystem\AutoScale\obj\x86\Debug\AutoScaler.pdb

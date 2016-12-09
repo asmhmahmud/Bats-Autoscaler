@@ -76,15 +76,9 @@
     <Compile Include="AutoScale\RUBiSAutoScaleManager.cs" />
     <Compile Include="Benchmark\EqlSC.cs" />
     <Compile Include="AutoScale\RuntimeDelay.cs" />
-    <Compile Include="Benchmark\OptOffline.cs" />
-    <Compile Include="Benchmark\OptOffAlg.cs" />
-    <Compile Include="Benchmark\PerfOpt.cs" />
-    <Compile Include="Benchmark\ReactSCAlg.cs" />
-    <Compile Include="Benchmark\ReactSC.cs" />
     <Compile Include="Benchmark\RSWorkloadGen.cs" />
     <Compile Include="Benchmark\CBAS.cs" />
     <Compile Include="Budget\EqlSCBud.cs" />
-    <Compile Include="Budget\OptOfflineBud.cs" />
     <Compile Include="Budget\RUBiSImpvBud.cs" />
     <Compile Include="Budget\RUBiSUserBud.cs" />
     <Compile Include="LoadGen\DelayMonitor.cs" />
